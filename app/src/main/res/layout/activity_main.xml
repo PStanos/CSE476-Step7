@@ -1,0 +1,126 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:gravity="center_horizontal"
+    android:layout_gravity="center_horizontal">
+
+    <TextView
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/dummy"
+        android:id="@+id/textProvider"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/textLabelProvider"
+        android:layout_toEndOf="@+id/textLabelProvider"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp" />
+
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/provider"
+        android:id="@+id/textLabelProvider"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:gravity="end" />
+
+    <TextView
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/dummy"
+        android:id="@+id/textLatitude"
+        android:layout_alignTop="@+id/textLabelLatitude"
+        android:layout_toRightOf="@+id/textLabelLatitude"
+        android:layout_toEndOf="@+id/textLabelLatitude"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp" />
+
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/latitude"
+        android:id="@+id/textLabelLatitude"
+        android:gravity="end"
+        android:layout_below="@+id/textLabelProvider"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/dummy"
+        android:id="@+id/textLongitude"
+        android:layout_toRightOf="@+id/textLabelLongitude"
+        android:layout_toEndOf="@+id/textLabelLongitude"
+        android:layout_alignTop="@+id/textLabelLongitude"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp" />
+
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/longitude"
+        android:id="@+id/textLabelLongitude"
+        android:gravity="end"
+        android:layout_below="@+id/textLabelLatitude"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="@string/dummy"
+        android:id="@+id/textTo"
+        android:layout_below="@+id/textLabelLongitude"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/dummy"
+        android:id="@+id/textDistance"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/textTo" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/newLoc"
+        android:id="@+id/textNewLocLabel"
+        android:layout_below="@+id/textDistance"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:textSize="15sp"
+        android:textStyle="italic" />
+
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:inputType="textPostalAddress"
+        android:ems="10"
+        android:id="@+id/editLocation"
+        android:layout_below="@+id/textNewLocLabel"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/newButton"
+        android:id="@+id/buttonNewLoc"
+        android:layout_below="@+id/editLocation"
+        android:layout_alignRight="@+id/editLocation"
+        android:layout_alignEnd="@+id/editLocation" />
+
+</RelativeLayout>
