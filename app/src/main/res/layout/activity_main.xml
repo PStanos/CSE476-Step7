@@ -121,6 +121,7 @@
         android:id="@+id/buttonNewLoc"
         android:layout_below="@+id/editLocation"
         android:layout_alignRight="@+id/editLocation"
-        android:layout_alignEnd="@+id/editLocation" />
+        android:layout_alignEnd="@+id/editLocation"
+        android:onClick="onNew" />
 
 </RelativeLayout>
